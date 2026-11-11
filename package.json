@@ -1,0 +1,12 @@
+{
+  "name": "practice-home",
+  "private": true,
+  "scripts": {
+    "install:all": "pnpm --dir ../reading-list-api install && pnpm --dir ../reading-list-web install",
+    "dev": "concurrently -n api,web -c blue,green \"pnpm --dir ../reading-list-api dev\" \"pnpm --dir ../reading-list-web dev\"",
+    "test": "pnpm --dir ../reading-list-api test && pnpm --dir ../reading-list-web test"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
