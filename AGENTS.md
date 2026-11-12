@@ -26,3 +26,17 @@ From this repo:
 - `pnpm dev`: starts the API (http://localhost:3000) and web (http://localhost:5173) together. The web app proxies `/api` to the API.
 - `pnpm test`: runs the tests in both repos.
 - `pnpm install:all`: installs dependencies in both repos.
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues, one tracker per repo: `gaturtle/reading-list-api`, `gaturtle/reading-list-web`, and `gaturtle/practice-home` for the glossary, ADRs and skills. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five default labels (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`) in all three repos. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/` at the root of this home repo. See `docs/agents/domain.md`.
