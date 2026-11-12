@@ -21,5 +21,5 @@ Where a Book sits in its lifecycle: Want to Read, Reading, or Finished.
 _Avoid_: State, progress, stage
 
 **Rating**:
-A 1–5 score the Reader gives a Book, which only counts while the Book is Finished.
+An optional whole-number score from 1 to 5 that the Reader gives a Finished Book. Only a Finished Book can have a Rating; a Book loses its Rating when it leaves Finished. A Finished Book with no Rating is unrated.
 _Avoid_: Score, stars, review
