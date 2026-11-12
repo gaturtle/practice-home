@@ -14,7 +14,14 @@ Agents run from the home repo, so `gh` would default to `gaturtle/practice-home`
 
 ## Features that cross repos
 
-One issue per repo, with the same title in each. The web issue is **blocked by** the API issue (the API lands first, see AGENTS.md › Cross-repo changes): add the dependency with `gh issue edit <web#> -R gaturtle/reading-list-web --add-blocked-by gaturtle/reading-list-api#<api#>`, or, if that fails, put a `Blocked by: gaturtle/reading-list-api#<n>` line at the top of the body. Each body links to the other issue as `gaturtle/<repo>#<n>`. Never use a bare `#<n>`, which only resolves within the same repo.
+One issue per repo, with the same title in each. The web issue is **blocked by** the API issue (the API lands first, see AGENTS.md › Cross-repo changes): `gh issue edit --add-blocked-by` rejects cross-repo references, so add the dependency through the REST API:
+
+```sh
+ID=$(gh api repos/gaturtle/reading-list-api/issues/<api#> --jq .id)
+gh api --method POST repos/gaturtle/reading-list-web/issues/<web#>/dependencies/blocked_by -F issue_id=$ID
+```
+
+Also put a `Blocked by: gaturtle/reading-list-api#<n>` line at the top of the web issue body. Each body links to the other issue as `gaturtle/<repo>#<n>`. Never use a bare `#<n>`, which only resolves within the same repo.
 
 ## Conventions
 
