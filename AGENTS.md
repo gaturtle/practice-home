@@ -1,13 +1,11 @@
 # Home repo
 
-This is the home repo. Run agents from here. It holds the skills (`.claude/skills`), the glossary and the ADRs for the Reading List project. The app code lives in sibling repos.
+Run agents from here. This repo holds the shared skills (`.claude/skills`, `.agents/skills`, installed from mattpocock/skills via `skills-lock.json`), the glossary and the ADRs for the Reading List project. The app code lives in the sibling repos below.
 
-## Repos
+## Other Repos
 
-- For the API, clone `gaturtle/reading-list-api` to `../reading-list-api` if it is missing.
-- For the web app, clone `gaturtle/reading-list-web` to `../reading-list-web` if it is missing.
-
-Each repo has its own `AGENTS.md` with its commands and conventions. Read it before changing that repo.
+- reading-list-api (the HTTP API: Hono, Zod/OpenAPI, SQLite): `../reading-list-api`. Clone from https://github.com/gaturtle/reading-list-api if missing. Read its AGENTS.md first.
+- reading-list-web (the React + Vite UI): `../reading-list-web`. Clone from https://github.com/gaturtle/reading-list-web if missing. Read its AGENTS.md first.
 
 ## Language
 
