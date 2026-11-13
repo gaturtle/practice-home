@@ -39,3 +39,7 @@ _Avoid_: Completed date, finish date, read date
 **Reading Goal**:
 The number of Books the Reader aims to Finish in one calendar year. Each year has at most one Reading Goal, which the Reader may set or change; a year without one has no Reading Goal. A Book counts toward the Reading Goal of the year of its Finished On.
 _Avoid_: Challenge, target, quota
+
+**Year in Review**:
+A summary of the Books the Reader Finished in one calendar year: how many, when, how they were Rated and whose they were. It is worked out from the Reading List and is never edited directly. A Book belongs to the Year in Review of the year of its Finished On; a Finished Book whose Finished On is unknown belongs to none.
+_Avoid_: Wrapped, stats, report, recap
