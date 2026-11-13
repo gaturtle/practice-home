@@ -20,6 +20,10 @@ _Avoid_: Item, entry, title
 Whoever the Reader names as having written a Book. Every Book has exactly one Author, and Books whose author names match, ignoring case and spacing, share the same Author. An Author exists only while at least one Book on the Reading List is theirs.
 _Avoid_: Writer, creator, artist
 
+**Shelf**:
+A named group of Books that the Reader makes. A Book can be on any number of Shelves, including none, and at most once on each. A Shelf exists until the Reader deletes it, even when it holds no Books; deleting a Shelf takes its Books off it but keeps them on the Reading List, and a Book removed from the Reading List leaves every Shelf it was on. No two Shelves have names that match ignoring case and spacing. A Shelf is not a Reading Status.
+_Avoid_: Tag, label, category, collection
+
 **Reading Status**:
 Where a Book sits in its lifecycle: Want to Read, Reading, or Finished.
 _Avoid_: State, progress, stage
