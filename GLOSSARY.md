@@ -31,3 +31,11 @@ _Avoid_: Score, stars, review
 **Average Rating**:
 The mean of the Ratings on an Author's rated Finished Books. It is not itself a Rating. An Author with no rated Finished Books has no Average Rating.
 _Avoid_: Author rating, author score
+
+**Finished On**:
+The day the Reader finished a Book. It is set to the current day when the Book becomes Finished, and the Reader may change it to any day that is not in the future. Only a Finished Book has a Finished On; a Book loses it when it leaves Finished. A Finished Book whose Finished On is unknown counts toward no Reading Goal until the Reader sets one.
+_Avoid_: Completed date, finish date, read date
+
+**Reading Goal**:
+The number of Books the Reader aims to Finish in one calendar year. Each year has at most one Reading Goal, which the Reader may set or change; a year without one has no Reading Goal. A Book counts toward the Reading Goal of the year of its Finished On.
+_Avoid_: Challenge, target, quota

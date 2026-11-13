@@ -9,7 +9,7 @@ Run agents from here. This repo holds the shared skills (`.claude/skills`, `.age
 
 ## Language
 
-Use the terms in `GLOSSARY.md` (Reader, Reading List, Book, Author, Reading Status, Rating, Average Rating) in code, UI copy, commits and PRs. Architectural decisions are in `docs/adr/`.
+Use the terms in `GLOSSARY.md` (Reader, Reading List, Book, Author, Reading Status, Rating, Average Rating, Finished On, Reading Goal) in code, UI copy, commits and PRs. Architectural decisions are in `docs/adr/`.
 
 ## Cross-repo changes
 
